@@ -50,4 +50,5 @@ def index():
     return html
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Listen on all network interfaces
+    app.run(host='0.0.0.0', port=5000, debug=True)
